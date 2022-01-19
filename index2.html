@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNPL</title>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css" >
+    <link rel="stylesheet" href="assets/fonts/icons/pro/css/all.css" >
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1b2d4f">
+<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
+</head>
+<body>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+         <div class="row">
+            <div class="col-4 right ">
+               
+                    <img class="avatar" src="assets/img/profile-image.jpg" height="60">
+               
+            </div>
+            <div class="col-8 "><small>Welcome Back</small>
+                
+                <h2>Ahmed Omar</h2></div>
+            
+        </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="nav flex-column side-ul">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="LimitRequest.html"><img src="assets/svg/limit_request_icon.svg" height="20" >Limit Request</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="LimitInquiry.html"><img src="assets/svg/limit_enq.svg" height="20">Limit Inquire</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bnpl.html"><img src="assets/svg/BNPL_icon.svg"height="20" >Buy Now Pay Later </a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cashLoan.html"><img src="assets/svg/cashloan_icon.svg" height="20">Cash Loan</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="td-request.html"><img src="assets/svg/td_request.svg" height="20">TD Request</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="saving_account.html"><img src="assets/svg/saving_account.svg" height="20">Saving Account</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transfer.html"><img src="assets/svg/transfer_icon_app.svg"height="20" >Transfer </a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Logout</a>
+                <hr>
+              </li>
+            </ul>
+          </div>
+         
+        </div>
+      </div>
+      
+      <nav class="navbar navbar-dark bg-dark navbar-inverse">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Digital Bank</a>
+          <div class="d-flex"><i class="fal fa-bell fa-2x"></i></div>
+        </div>
+        
+      </nav>
+      <!-- main container -->
+  <div id="main" class="container-fluid content">
+       <!-- First Row -->
+      <div class="row">
+          <!-- First col  -->
+          <div class="col-12">
+       <div class="row">
+           <div class="col-2">
+             
+           </div>
+           <div class="col-8 center"><h4></h4></div>
+          <div class="cal-2"></div>
+       </div>
+       <div class="row">
+        <div class="col-4 right ">
+           
+                <img class="avatar" src="assets/img/profile-image.jpg">
+           
+        </div>
+        <div class="col-8 "><small>Welcome Back</small>
+            
+            <h2>Ahmed Omar</h2></div>
+        
+    </div>
+          </div><!-- First col end -->
+          <div class="cards-container">
+            
+             
+             <div id="up">
+              <div id="cashloan" class="cash-card animate__backInRight">
+                <div   class="row">
+                  <div class="col-12"><h5 class="light">Cash Loan</h5></div>
+                  <div class="col-6">
+                    <small>Limit</small>
+                    <h5 class="light">1500 EGP</h5>
+                  </div>
+                  <div class="col-6">
+                    <small>Ahmed Omar</small>
+                  
+                  </div>
+                </div>
+                              </div>
+             </div>
+             
+                              <div id="down">
+                                <div id="bnpl" class="bnpl-card animate__backInLeft animate__delay-3">
+                                  <div class="row">
+                                    <div class="col-12"><h5 class="light">Buy Now <br>Pay later</h5></div>
+                                    <div class="col-6">
+                                      <small>Limit</small>
+                                      <h5 class="light">7000 EGP</h5>
+                                    </div>
+                                    <div class="col-6">
+                                      <small>Ahmed Omar</small>
+                                    
+                                    </div>
+                                  </div>
+                                                </div>
+                              </div>
+     
+          
+      </div>  
+      <!-- First Row end -->
+  </div>  
+  <div class="row ">
+    <div class="col-12 off_page_right">
+      <h6 class="gray_h">What Would you like to do? </h6>
+      <div class="icon_container">
+        <a href="LimitRequest.html">
+        <div class="app-icon">
+          <div class="center">
+            <img src="assets/svg/limit_request_icon.svg" height="60">
+            <h6>Limit request</h6>
+          </div>
+      
+        </div></a>
+        <a href="LimitInquiry.html">
+          <div class="app-icon">
+          <div class="center">
+            <img src="assets/svg/limit_enq.svg" height="60">
+            <h6>Limit Inquiry</h6>
+          </div>
+        </div></a>
+        <a href="saving_account.html">
+          <div class="app-icon">
+          <div class="center">
+            <img src="assets/svg/saving_account.svg" height="60" >
+            <h6>Saving Account</h6>
+          </div>
+        </div></a>
+        <a href="transfer.html">
+          <div class="app-icon">
+          <div class="center">
+            <img src="assets/svg/transfer_icon_app.svg" height="60">
+            <h6>Transfer</h6>
+          </div>
+        </div></a>
+        <a href="cashLoan.html">
+          <div class="app-icon">
+          <div class="center">
+            <img src="assets/svg/cashloan_icon.svg" height="60">
+            <h6>Cash Loan</h6>
+          </div>
+        </div></a>
+        <a href="td-request.html">
+          <div class="app-icon">
+          <div class="center">
+            <img src="assets/svg/td_request.svg" height="60">
+            <h6>TD Request</h6>
+          </div>
+        </div></a>
+        <a href="bnpl.html">
+          <div class="app-icon">
+          <div class="center">
+            <img src="assets/svg/BNPL_icon.svg" height="60">
+            <h6>BNPL</h6>
+          </div>
+        </div></a>
+      </div>
+
+    </div>
+   
+  </div>
+  <div class="row spacer ">
+    <div class="col-8 ">
+<h4 class="gray_h"><img src="assets/svg/trans_icon.svg" style="margin-right: 5px; height: 30px;" >Transactions </h4>
+
+    </div>
+    <div class="col-4 right"><button type="button" class="btn btn-primary">View all</button></div>
+  </div>
+    <div class="row">
+      <div class="col-1"><img src="assets/svg/transOut_icon.svg" style="margin-right: 5px; height: 30px;" ></div>
+      <div class="col-8"><p>Cash Loan</p> <small>Today</small></div>
+      <div class="col-3"><strong class="red">1500 EGP</strong></div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-1"><img src="assets/svg/transIn_icon.svg" style="margin-right: 5px; height: 30px;" ></div>
+      <div class="col-8"><p>Added To Wallet </p> <small>Today</small></div>
+      <div class="col-3"><strong class="green">1400 EGP</strong></div>
+    </div>
+  
+</div>
+
+<!-- Scripts -->   
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script> 
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/fonts/icons/pro/js/all.js"></script> 
+<script>
+   $("#down").on('click touchstart',function(){
+    $("#cashloan").css("z-index", 0);
+    
+    $("nav").addClass("navbar-dark");
+    $("nav").removeClass("navbar-dark-orange");
+  
+ });
+
+$("#up").on('click touchstart',function(){
+   $("#cashloan").css("z-index",300);
+   $("nav").addClass("navbar-dark-orange");
+
+   
+  
+   
+});
+</script>
+</body>
+</html>

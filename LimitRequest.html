@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNPL</title>
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/fonts/icons/pro/css/all.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1b2d4f">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">successfully registered</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body center">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_yoltywwd.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+          <P >Your limit registration is done successfully, Enjoy!</P>
+          <div class="container left">
+            <div class="row">
+              <div class="col-6 " style="font-size:14px">Total approved limit: </div><div class="col-6" style="font-size:14px">10000 EGP</div>
+              <div class="col-6" style="font-size:14px">BNPL: </div> <div class="col-6" style="font-size:14px">7000 EGP</div><div class="col-6" style="font-size:14px">Cash loan: </div>
+              <div class="col-6" style="font-size:14px">3000 EGP</div>
+            </div>
+          </div>
+          
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="index1.html"><button type="button" class="btn btn-primary">Done</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <div class="row">
+        <div class="col-4 right ">
+           
+                <img class="avatar" src="assets/img/profile-image.jpg" height="60">
+           
+        </div>
+        <div class="col-8 "><small>Welcome Back</small>
+            
+            <h2>Ahmed Omar</h2></div>
+        
+    </div>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <ul class="nav flex-column side-ul">
+          <li class="nav-item">
+            <a class="nav-link active" href="index1.html">Home</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="LimitRequest.html"><img src="assets/svg/limit_request_icon.svg" height="20">Limit
+              Request</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="LimitInquiry.html"><img src="assets/svg/limit_enq.svg" height="20">Limit
+              Inquire</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bnpl.html"><img src="assets/svg/BNPL_icon.svg" height="20">Buy Now Pay Later </a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cashLoan.html"><img src="assets/svg/cashloan_icon.svg" height="20">Cash Loan</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="td-request.html"><img src="assets/svg/td_request.svg" height="20">TD Request</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="saving_account.html"><img src="assets/svg/saving_account.svg" height="20">Saving
+              Account</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="transfer.html"><img src="assets/svg/transfer_icon_app.svg" height="20">Transfer
+            </a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Logout</a>
+            <hr>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <!-- ofcanvas -->
+  <nav class="navbar navbar-dark bg-dark navbar-inverse">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Digital Bank</a>
+      <div class="d-flex"><i class="fal fa-bell fa-2x"></i></div>
+    </div>
+
+  </nav>
+  <!-- main container -->
+  <div id="main" class="container-fluid content">
+    <!-- First Row -->
+
+    <!-- First col  -->
+
+    <div class="row">
+      <div class="col-2">
+
+      </div>
+
+      <div class="col-8 center">
+        <h4>Limit Request</h4>
+      </div>
+      <div class="col-2 right">
+        <a href="index.html"> <img src="assets/svg/close_btn.svg"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <!-- Stepper -->
+        <div class="steps-form">
+          <div class="steps-row setup-panel">
+            <div class="steps-step">
+              <a href="#step-9" type="button" class="btn btn-primary btn-circle"><i class="fal fa-user"></i></a>
+              <p>Personal info</p>
+            </div>
+            <div class="steps-step">
+              <a href="#step-10" type="button" class="btn btn-secondary btn-circle" disabled="disabled"><i
+                  class="fal fa-briefcase"></i></a>
+              <p>Work info</p>
+            </div>
+            <div class="steps-step">
+              <a href="#step-11" type="button" class="btn btn-secondary btn-circle" disabled="disabled"><i
+                  class="fal fa-dumbbell"></i></a>
+              <p>Life style</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body mb-4">
+
+
+
+
+            <form role="form" action="" method="post">
+
+              <!-- First Step -->
+              <div class="row setup-content" id="step-9">
+                <div class="col-md-12">
+                  <h4 class="font-weight-bold pl-0 my-4"><strong>Personal info</strong></h4>
+                 
+
+                  <small>Full name</small>
+                  <p class="primary_text">Ahmed Omar </p>
+                  <hr>
+                  <small>National ID</small>
+                  <p>01928476261726</p>
+                  <hr>
+                  <small>email</small>
+                  <p>ahmed.omar@egabi.com</p>
+                  
+                  <small>Mobile</small>
+                  <p class="primary_text">+2010 258 833 14 </p>
+                  <hr>
+                  <small>Address </small>
+                  <p class="primary_text">New cairo </p>
+                  <hr class="spacer">
+
+                  <button class="btn btn-primary btn-rounded nextBtn float-right" type="button">Next<i
+                      class="fal fa-arrow-right"></i></button>
+                </div>
+              </div>
+
+              <!-- Second Step -->
+              <div class="row setup-content" id="step-10">
+                <div class="col-md-12">
+                  <h4 class="font-weight-bold pl-0 my-4"><strong>Work info</strong></h4>
+                  <small>Job Title</small>
+                  <p class="primary_text">Sr.Sales</p>
+                  <hr>
+
+                  <small>Industry</small>
+                  <p>Information Technology</p>
+
+                  <small>Work Address</small>
+                  <p class="primary_text">New cairo </p>
+                  <hr>
+                  <small>Work Phone </small>
+                  <p class="primary_text">+201025883314 </p>
+                  <hr class="spacer">
+
+                  <div class="form-group md-form">
+                    <label for="companyName" data-error="wrong" data-success="right">Salary</label>
+                    <h5 id="output" class="value_slide">5000</h5>
+                    <input id="tickmarks2" class="form-range slider" step="10" type="range" list="tickmarks" min="0"
+                      max="10000" value="5000" onchange="run(this)">
+
+
+                    <datalist id="tickmarks">
+                      <option value="0" label="0"></option>
+                      <option value="1000"></option>
+                      <option value="2000"></option>
+                      <option value="3000"></option>
+                      <option value="4000"></option>
+                      <option value="5000" label="5000"></option>
+                      <option value="6000"></option>
+                      <option value="7000"></option>
+                      <option value="8000"></option>
+                      <option value="9000"></option>
+                      <option value="10000" label="10000">10000</option>
+                    </datalist>
+                  </div>
+
+                  <div class="form-group md-form">
+                    <label for="companyName" data-error="wrong" data-success="right">Other Income</label>
+                    <h5 id="vivo" class="value_slide">5000</h5>
+                    <input id="slider" class="form-range slider" step="10" type="range" list="tickmark" min="0" max="10000" value="5000" onchange="vro(this)">
+
+
+                    <datalist id="tickmark">
+                      <option value="0" label="0"></option>
+                      <option value="1000"></option>
+                      <option value="2000"></option>
+                      <option value="3000"></option>
+                      <option value="4000"></option>
+                      <option value="5000" label="5000"></option>
+                      <option value="6000"></option>
+                      <option value="7000"></option>
+                      <option value="8000"></option>
+                      <option value="9000"></option>
+                      <option value="10000" label="10000">10000</option>
+                    </datalist>
+                  </div>
+
+                  <hr class="spacer">
+                  <button class="btn btn-primary btn-rounded prevBtn float-left" type="button"><i
+                      class="fal fa-arrow-left"></i>Previous</button>
+                  <button class="btn  btn-primary btn-rounded nextBtn float-right" type="button">Next<i
+                      class="fal fa-arrow-right"></i></button>
+                </div>
+              </div>
+
+              <!-- Third Step -->
+              <div class="row setup-content" id="step-11">
+                <div class="col-md-12">
+                  <h4 class="font-weight-bold pl-0 my-4"><strong>Lifestyle </strong></h4>
+                  <label for="companyName" data-error="wrong" data-success="right">Marital Status</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Single</option>
+                    <option value="2">Married</option>
+                    <option value="3">Other</option>
+                  </select>
+                  <label for="companyName" data-error="wrong" data-success="right">Number of Dependents</label>
+                  <p>
+                  </p>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button id="down_btn" type="button" class="btn btn-default btn-number" disabled="disabled"
+                        data-type="minus" data-field="quant[1]">
+                        <span class="fas fa-minus"></span>
+                      </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                      <button id="up_btn" type="button" class="btn btn-default btn-number" data-type="plus"
+                        data-field="quant[1]">
+                        <span class="fas fa-plus"></span>
+                      </button>
+                    </span>
+                  </div>
+                  <p></p>
+                  <div class="row spacer">
+                    <div class="col-12">
+                      <label for="companyName" data-error="wrong" data-success="right">Do you have Club
+                        Membership?</label>
+                      <div class="form-check form-switch">
+
+                        <input id="chkclub" class="form-check-input form-switch-lg" type="checkbox" value="">
+
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div id="dvclub" style="display:none;">
+
+                        <label for="companyName" data-error="wrong" data-success="right">Upload membership card
+                        </label><br>
+
+                        <input id="actual-btn" type="file" accept="image/*" capture="camera" hidden />
+                        <label class="btn  btn-primary btn-rounded" for="actual-btn"><i class="fal fa-camera"></i>Upload
+                          Photo</label>
+                        <span id="file-chosen">No file chosen</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row spacer">
+                    <div class="col-12">
+                      <label for="companyName" data-error="wrong" data-success="right">Do you have Car</label>
+                      <div class="form-check form-switch">
+
+                        <input id="chkcar" class="form-check-input form-switch-lg" type="checkbox" value="">
+
+                      </div>
+                    </div>
+                    <div id="dvcar" style="display:none;">
+                      <div class="col-12">
+
+
+                        <label for="companyName" data-error="wrong" data-success="right">Upload Car license </label><br>
+
+                        <input id="actual-btn2" type="file" accept="image/*" capture="camera" hidden />
+                        <label class="btn  btn-primary btn-rounded" for="actual-btn2"><i
+                            class="fal fa-camera"></i>Upload Photo</label>
+                        <span id="file-chosen2">No file chosen</span>
+
+                      </div>
+
+                      <div class="col-12">
+                        <label for="companyName" data-error="wrong" data-success="right">Make</label>
+                        <select class="form-select" name="make" id="make">
+                          <option value="0">Make</option>
+                          <option value="1">BMW</option>
+                          <option value="2">Daewoo</option>
+                          <option value="3">Ford</option>
+                          <option value="4">Holden</option>
+                          <option value="5">Honda</option>
+                          <option value="6">Hyundai</option>
+                          <option value="7">Isuzu</option>
+                          <option value="8">Kia</option>
+                          <option value="9">Lexus</option>
+                          <option value="10">Mazda</option>
+                          <option value="11">Mitsubishi</option>
+                          <option value="12">Nissan</option>
+                          <option value="13">Peugeot</option>
+                          <option value="14">Subaru</option>
+                          <option value="15">Suzuki</option>
+                          <option value="16">Toyota</option>
+                          <option value="17">Volkswagen</option>
+                        </select>
+                        <!-- Vehicle Model List -->
+                        <label for="companyName" data-error="wrong" data-success="right">Model</label>
+                        <select class="form-select" name="model" id="model">
+                          <option value="0">Model</option>
+                          <option class="318i" value="1">318i</option>
+                          <option class="lanos" value="2">Lanos</option>
+                          <option class="courier" value="3">Courier</option>
+                          <option class="falcon" value="3">Falcon</option>
+                          <option class="festiva" value="3">Festiva</option>
+                          <option class="fiesta" value="3">Fiesta</option>
+                          <option class="focus" value="3">Focus</option>
+                          <option class="laser" value="3">Laser</option>
+                          <option class="ranger" value="3">Ranger</option>
+                          <option class="territory" value="3">Territory</option>
+                          <option class="astra" value="4">Astra</option>
+                          <option class="barina" value="4">Barina</option>
+                          <option class="captiva" value="4">Captiva</option>
+                          <option class="colorado" value="4">Colorado</option>
+                          <option class="commodore" value="4">Commodore</option>
+                          <option class="cruze" value="4">Cruze</option>
+                          <option class="rodeo" value="4">Rodeo</option>
+                          <option class="viva" value="4">Viva</option>
+                        </select>
+                        <!-- Vehicle Year List -->
+                        <label for="companyName" data-error="wrong" data-success="right">Year</label>
+                        <select class="form-select" name="year" id="year">
+                          <option value="0">Year</option>
+                          <option value="1">1998</option>
+                          <option value="1">1999</option>
+                          <option value="1">2000</option>
+                          <option value="1">2001</option>
+                          <option value="1">2002</option>
+                          <option value="1">2003</option>
+                          <option value="1">2004</option>
+                          <option value="1">2005</option>
+                          <option value="2">1997</option>
+                          <option value="2">1998</option>
+                          <option value="2">1999</option>
+                          <option value="2">2000</option>
+                          <option value="2">2001</option>
+                          <option value="2">2002</option>
+                          <option value="2">2003</option>
+                          <option value="3">1991-1999</option>
+                          <option value="4">1997-2007</option>
+                          <option value="5">1997-2007</option>
+                          <option value="3">2002</option>
+                          <option value="3">2003</option>
+                          <option value="3">2004</option>
+                          <option value="3">2005</option>
+                          <option value="4">1997-2005</option>
+                          <option value="4">1997-2005</option>
+                          <option value="4">1997-2005</option>
+                          <option value="4">1997-2005</option>
+                          <option value="4">1997-2005</option>
+                          <option value="4">1997-2005</option>
+                          <option value="4">1997-2005</option>
+                          <option value="4">1997-2005</option>
+                        </select>
+                        <!-- Vehicle Identity List -->
+                        <label for="companyName" data-error="wrong" data-success="right">Type</label>
+                        <select class="form-select" name="identifier" id="identifier">
+                          <option value="0">Type</option>
+                          <option class="E46" value="1">E46</option>
+                          <option class="1997-2003" value="2">N/A</option>
+                          <option class="1997-2007" value="4">N/A</option>
+                          <option class="1997-2007" value="5">N/A</option>
+                          <option class="5041618" value="3">BA</option>
+                          <option class="1997-2005" value="3">AU</option>
+                          <option class="1997-2005" value="3">AU2</option>
+                          <option class="1997-2005" value="4">N/A</option>
+                          <option class="1997-2005" value="4">1997-2005</option>
+                          <option class="1997-2005" value="4">1997-2005</option>
+                          <option class="1997-2005" value="4">1997-2005</option>
+                          <option class="1997-2005" value="4">1997-2005</option>
+                          <option class="1997-2005" value="4">1997-2005</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="spacer">
+                  <button class="btn btn-primary btn-rounded prevBtn float-left" type="button"><i
+                      class="fal fa-arrow-left"></i>Previous</button>
+                  <button class="btn  btn-primary btn-rounded float-right" type="button" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Submit</button>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--Main-->
+
+
+
+
+
+
+
+  </div>
+
+  <!-- Scripts -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/jq-ui.js"></script>
+  <script type="text/javascript" src="assets/js/touch.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js"
+    integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/fonts/icons/pro/js/all.js"></script>
+  <script src="assets/js/steper.js"></script>
+  <script>
+    function run(run) {
+      document.getElementById('output').textContent = run.value;
+
+    }
+
+    function vro(vro) {
+      document.getElementById('vivo').textContent = vro.value;
+
+    }
+  </script>
+  <SCRIPT>
+    const actualBtn = document.getElementById('actual-btn');
+
+    const fileChosen = document.getElementById('file-chosen');
+
+    actualBtn.addEventListener('change', function () {
+      fileChosen.textContent = this.files[0].name
+    })
+    const actualBtn2 = document.getElementById('actual-btn2');
+
+    const fileChosen2 = document.getElementById('file-chosen2');
+
+    actualBtn2.addEventListener('change', function () {
+      fileChosen2.textContent = this.files[0].name
+    })
+  </SCRIPT>
+  <script>
+    //plugin bootstrap minus and plus
+    //http://jsfiddle.net/laelitenetwork/puJ6G/
+    $('.btn-number').click(function (e) {
+      e.preventDefault();
+
+      fieldName = $(this).attr('data-field');
+      type = $(this).attr('data-type');
+      var input = $("input[name='" + fieldName + "']");
+      var currentVal = parseInt(input.val());
+      if (!isNaN(currentVal)) {
+        if (type == 'minus') {
+
+          if (currentVal > input.attr('min')) {
+            input.val(currentVal - 1).change();
+          }
+          if (parseInt(input.val()) == input.attr('min')) {
+            $(this).attr('disabled', true);
+          }
+
+        } else if (type == 'plus') {
+
+          if (currentVal < input.attr('max')) {
+            input.val(currentVal + 1).change();
+          }
+          if (parseInt(input.val()) == input.attr('max')) {
+            $(this).attr('disabled', true);
+          }
+
+        }
+      } else {
+        input.val(0);
+      }
+    });
+    $('.input-number').focusin(function () {
+      $(this).data('oldValue', $(this).val());
+    });
+    $('.input-number').change(function () {
+
+      minValue = parseInt($(this).attr('min'));
+      maxValue = parseInt($(this).attr('max'));
+      valueCurrent = parseInt($(this).val());
+
+      name = $(this).attr('name');
+      if (valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+      } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+      }
+      if (valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+      } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+      }
+
+
+    });
+    $(".input-number").keydown(function (e) {
+      // Allow: backspace, delete, tab, escape, enter and .
+      if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+        // Allow: Ctrl+A
+        (e.keyCode == 65 && e.ctrlKey === true) ||
+        // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+        // let it happen, don't do anything
+        return;
+      }
+      // Ensure that it is a number and stop the keypress
+      if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+      }
+    });
+  </script>
+  <script></script>
+  <script>
+    $(function () {
+      $("#chkclub").click(function () {
+        if ($(this).is(":checked")) {
+          $("#dvclub").show();
+        } else {
+          $("#dvclub").hide();
+        }
+      });
+    });
+    $(function () {
+      $("#chkcar").click(function () {
+        if ($(this).is(":checked")) {
+          $("#dvcar").show();
+        } else {
+          $("#dvcar").hide();
+        }
+      });
+    });
+  </script>
+  <script>
+    function showURL() {
+      var d1 = $("#identifier").find(":selected").attr("class");
+      var url = ("/store/vehicle-selected/" + d1);
+      window.location = url;
+      return true;
+    }
+
+    $(document).ready(function () {
+      var $make = $('#make'),
+        $model = $('#model'),
+        $options = $model.find('option');
+
+      $make.on('change', function () {
+        $model.html($options.filter('[value="' + this.value + '"]'));
+        $model.trigger('change');
+      }).trigger('change');
+
+      var $model = $('#model'),
+        $year = $('#year'),
+        $yearOptions = $year.find('option');
+
+      $model.on('change', function () {
+        $year.html($yearOptions.filter('[value="' + this.value + '"]'));
+        $year.trigger('change');
+      }).trigger('change');
+
+      var $year = $('#year'),
+        $identifier = $('#identifier'),
+        $identifierOptions = $identifier.find('option');
+
+      $year.on('change', function () {
+        var filteredIdetifiers = $identifierOptions.filter('[value="' + this.value + '"]');
+        debugger
+        if (!($("#make").val() == 3 && $("#model option:selected").text() == 'Falcon')) {
+          filteredIdetifiers = filteredIdetifiers.filter(function (i, e) {
+            return e.value !== '3'
+          });
+        }
+      //   $identifier.html(filteredIdetifiers);
+      //   $identifier.trigger('change');
+      // }).trigger('change');
+
+    });
+  </script>
+</body>
+
+</html>

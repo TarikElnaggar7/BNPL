@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNPL</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css" >
+    <link rel="stylesheet" href="assets/fonts/icons/pro/css/all.css" >
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1b2d4f">
+<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Advanced filter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body center">
+ 
+<div class="mb-3 left">
+  <label for="exampleInputEmail1" class="form-label">Program type</label>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>0% Intrest </option>
+    <option value="1">with Intrest</option> 
+   
+  </select>
+  
+</div>
+
+<div class="mb-3 left">
+  <label for="exampleInputEmail1" class="form-label">Merchant Name</label>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Please select  </option>
+    <option value="1">Raya</option> 
+    <option value="1">Trade Line</option> 
+    <option value="1">Adidas </option> 
+  </select>
+ 
+</div>
+<div class="mb-3 left">
+  <label for="exampleInputEmail1" class="form-label">Product Category </label>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Please select category  </option>
+    <option value="1">Electronics </option> 
+    <option value="1">Home appliance </option> 
+    <option value="1">Fashion </option> 
+    <option value="1">Sports </option> 
+    <option value="1">Others </option> 
+  </select>
+  
+</div>
+<div class="mb-3 left">
+  <label for="exampleInputEmail1" class="form-label">Brand Name </label>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Please select Brand</option>
+    <option value="1">Apple</option> 
+    <option value="1">Samsung</option> 
+    <option value="1">Oppo</option> 
+  </select>
+  
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="index.html"><button type="button" class="btn btn-primary">Find</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+         <div class="row">
+            <div class="col-4 right ">
+               
+                    <img class="avatar" src="assets/img/profile-image.jpg" height="60">
+               
+            </div>
+            <div class="col-8 "><small>Welcome Back</small>
+                
+                <h2>Ahmed Omar</h2></div>
+            
+        </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="nav flex-column side-ul">
+              <li class="nav-item">
+                <a class="nav-link active" href="index3.html">Home</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="LimitRequest.html"><img src="assets/svg/limit_request_icon.svg" height="20" >Limit Request</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="LimitInquiry.html"><img src="assets/svg/limit_enq.svg" height="20">Limit Inquire</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bnpl.html"><img src="assets/svg/BNPL_icon.svg"height="20" >Buy Now Pay Later </a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cashLoan.html"><img src="assets/svg/cashloan_icon.svg" height="20">Cash Loan</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="td-request.html"><img src="assets/svg/td_request.svg" height="20">TD Request</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="saving_account.html"><img src="assets/svg/saving_account.svg" height="20">Saving Account</a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transfer.html"><img src="assets/svg/transfer_icon_app.svg"height="20" >Transfer </a>
+                <hr>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Logout</a>
+                <hr>
+              </li>
+            </ul>
+          </div>
+         
+        </div>
+      </div>
+      <!-- ofcanvas -->
+      <nav class="navbar navbar-dark bg-dark navbar-inverse">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index3.html">Digital Bank</a>
+          <div class="d-flex"><i class="fal fa-bell fa-2x"></i></div>
+        </div>
+        
+      </nav>
+      <!-- main container -->
+  <div id="main" class="container-fluid content">
+       <!-- First Row -->
+      
+          <!-- First col  -->
+         
+       <div class="row">
+           <div class="col-2">
+            <a href="#" onclick="goBack()" > <img class="padding-l5" src="assets/svg/back_btn.svg" height="30"></a>
+           </div>
+           
+           <div class="col-8 center"><h2 >Buy Now Pay later</h2></div>
+          <div class="col-2 right">
+           <a href="index.html"> <img src="assets/svg/trans_icon.svg"></a>
+          </div>
+       </div>
+       <div class="row">
+        <div class="col-12">
+          <div class="card shadow">
+            <div class="row">
+              <div class="col-1">
+               <img src="assets/svg/checked_done.svg" height="30">
+              </div>
+              <div class="col-5"> Limit</div>
+              <div class="col-6 right"><h2 class="orange_text">7000 EGP</h2></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row spacer">
+        <div class="col-6"><h6>Filters by </h6></div>
+        <div class="col-6 right"><a href="#" class="orange_text" data-bs-toggle="modal" data-bs-target="#exampleModal">Advanced Filter</a></div>
+        <div class="col-12">
+          <span class="badge badge-pill badge-primary">All </span>
+          <span class="badge badge-pill badge-light">Technology </span>
+          <span class="badge badge-pill badge-light">Fashion </span>
+          <span class="badge badge-pill badge-light">Mobile </span>
+          <span class="badge badge-pill badge-light">Gym </span>
+        </div>
+      </div>
+      <div class="row  spacer">
+        <div class="col-12 ">
+          
+          <div class="merchant_container">
+            <a href="bnpl-Productpage.html">
+            <div class="merchant-icon">
+              <div class="center">
+                <img src="assets/img/rayalogo.png" >
+                
+              </div>
+          
+            </div></a>
+            <a href="bnpl-Productpage2.html">
+              <div class="merchant-icon">
+              <div class="center">
+                <img src="assets/img/Image_4.png" >
+                
+              </div>
+            </div></a>
+            <a href="saving_account.html">
+              <div class="merchant-icon">
+              <div class="center">
+                <img src="assets/img/Image_5.png" >
+                
+              </div>
+            </div></a>
+            <a href="transfer.html">
+              <div class="merchant-icon">
+              <div class="center">
+                <img src="assets/img/Image_6.png" >
+               
+              </div>
+            </div></a>
+           
+          </div>
+    
+        </div>
+       
+      </div>
+       
+         <div class="row ">
+           <div class="col-6"><h6>Offers</h6></div>
+           <div class="col-6 right"><a href="#" class="orange_text">View all</a></div>
+         </div>
+         
+          <div class="row ">
+            <div class="col-12">
+              
+              <div class="card shadow">
+               <div class="row">
+                 <div class="col-2">
+                   <img src="assets/img/product.png" width="60">
+                 </div>
+                 <div class="col-8">
+                   <div class="row " style="padding-left: 5px;">
+                     <div class="col-12">
+                      <h6>Oppo A74 </h6>
+                      <small>Dual SIM Mobile Phone
+                       6.43 Inch, 6 GB RAM, Prism Black 
+                      </small>
+                     </div>
+                     <div class="col-6">
+                       <small>Merchant </small>
+                       <p><strong>Raya</strong></p>
+                     </div>
+                     <div class="col-6"> <small>Price </small>
+                      <p class="orange_text"><strong>3000 EGP</strong></p></div>
+                   </div>
+
+                 </div>
+                 <div class="col-2 right">
+                   <img src="assets/svg/infoicon.svg" height="20">
+                 </div>
+                 <div class="col-12 ">
+                  <a href="bnpl-Productpage.html">
+                  <div class="d-grid gap-2">
+                   <button class="btn btn-accent" style="margin-top: 5px;">Buy now</button></div></a>
+                 </div>
+               </div>
+              </div>
+            </div>
+       </div>
+
+       <div class="row">
+        <div class="col-6"><h6>Recently added</h6></div>
+        <div class="col-6 right"><a href="#" class="orange_text">View all</a></div>
+      </div>
+      
+       <div class="row ">
+         <div class="col-12">
+           
+           <div class="card shadow">
+            <div class="row">
+              <div class="col-2">
+                <img src="assets/img/ohpnex.png" width="60">
+              </div>
+              <div class="col-8">
+                <div class="row " style="padding-left: 5px;">
+                  <div class="col-12">
+                   <h6>IPhone X  </h6>
+                   <small>Dual SIM Mobile Phone
+                    6.43 Inch, 6 GB RAM, Prism Black 
+                   </small>
+                  </div>
+                  <div class="col-6">
+                    <small>Merchant </small>
+                    <p><strong>Tradeline</strong></p>
+                  </div>
+                  <div class="col-6"> <small>Price </small>
+                   <p class="orange_text"><strong>11000 EGP</strong></p></div>
+                </div>
+
+              </div>
+              <div class="col-2 right">
+               
+              </div>
+              <div class="col-12 ">
+                <a href="bnpl-Productpage2.html">
+               <div class="d-grid gap-2">
+                <button class="btn btn-accent" style="margin-top: 5px;">Buy now</button></div></a>
+              </div>
+            </div>
+           </div>
+         </div>
+    </div>
+     
+       
+      
+ </div><!--Main-->
+ 
+
+
+ 
+ 
+   
+   
+  
+</div>
+
+<!-- Scripts -->   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="assets/js/jq-ui.js"></script>
+<script type="text/javascript" src="assets/js/touch.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script> 
+<script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/fonts/icons/pro/js/all.js"></script> 
+<script src="assets/js/steper.js"></script> 
+<script>
+  $("#down").on('click touchstart',function(){
+    $("#cashloan").css("z-index", 0);
+    $("nav").removeClass("navbar-dark-orange");
+    // $("#bn-details").removeClass("disable");
+    // $("#cash-details").addClass("disable");
+  
+ });
+
+$("#up").on('click touchstart',function(){
+   $("#cashloan").css("z-index",300);
+   $("nav").addClass("navbar-dark-orange");
+  //  $("#bn-details").addClass("disable");
+  //  $("#cash-details").removeClass("disable");
+   
+  
+   
+});
+</script>
+<script>
+  function run(run) {
+  document.getElementById('output').textContent = run.value;
+}
+
+
+
+</script>
+<SCRIPT>
+  const actualBtn = document.getElementById('actual-btn');
+
+const fileChosen = document.getElementById('file-chosen');
+
+actualBtn.addEventListener('change', function(){
+  fileChosen.textContent = this.files[0].name
+})
+const actualBtn2 = document.getElementById('actual-btn2');
+
+const fileChosen2 = document.getElementById('file-chosen2');
+
+actualBtn2.addEventListener('change', function(){
+  fileChosen2.textContent = this.files[0].name
+})
+</SCRIPT>
+<script>
+
+$('.btn-number').click(function(e){
+    e.preventDefault();
+    
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+    
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    
+    
+});
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+
+</script>
+<script></script>
+<script>
+  $(function () {
+        $("#chkclub").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvclub").show();
+            } else {
+                $("#dvclub").hide();
+            }
+        });
+    });
+    $(function () {
+        $("#chkcar").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvcar").show();
+            } else {
+                $("#dvcar").hide();
+            }
+        });
+    });
+</script>
+<script>function showURL() {
+  var d1 = $("#identifier").find(":selected").attr("class");
+  var url = ("/store/vehicle-selected/" + d1);
+  window.location = url;
+  return true;
+}
+
+$(document).ready(function() {
+var $make = $( '#make' ),
+  $model = $( '#model' ),
+  $options = $model.find( 'option' );
+  
+$make.on( 'change', function() {
+$model.html( $options.filter( '[value="' + this.value + '"]') );
+$model.trigger( 'change' );
+} ).trigger( 'change' );
+
+var $model = $( '#model' ),
+  $year = $( '#year' ),
+  $yearOptions = $year.find( 'option' );
+  
+$model.on( 'change', function() {
+$year.html( $yearOptions.filter( '[value="' + this.value + '"]' ) );
+$year.trigger( 'change' );
+} ).trigger( 'change' );
+
+var $year = $( '#year' ),
+  $identifier = $( '#identifier' ),
+  $identifierOptions = $identifier.find( 'option' );
+  
+$year.on( 'change', function() {
+ var filteredIdetifiers = $identifierOptions.filter( '[value="' + this.value + '"]' );
+  debugger
+  if(!($("#make").val() == 3 && $("#model option:selected").text()  == 'Falcon')) {
+     filteredIdetifiers = filteredIdetifiers.filter(function(i,e){ return e.value !== '3'    });
+  }
+  $identifier.html(filteredIdetifiers);
+$identifier.trigger( 'change' );
+} ).trigger( 'change' );
+
+});
+</script>
+<script>
+  function goBack() {
+     window.history.back();
+  }
+</script>
+</body>
+</html>

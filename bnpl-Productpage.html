@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNPL</title>
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/fonts/icons/pro/css/all.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1b2d4f">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">QR Code</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body center">
+
+          <P>Please scan QR code</P>
+          <img  src="assets/img/qrcode_8178217_.png" height="200">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="index3.html"><button type="button" class="btn btn-primary">Done</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <div class="row">
+        <div class="col-4 right ">
+           
+                <img class="avatar" src="assets/img/profile-image.jpg" height="60">
+           
+        </div>
+        <div class="col-8 "><small>Welcome Back</small>
+            
+            <h2>Ahmed Omar</h2></div>
+        
+    </div>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <ul class="nav flex-column side-ul">
+          <li class="nav-item">
+            <a class="nav-link active" href="index3.html">Home</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="LimitRequest.html"><img src="assets/svg/limit_request_icon.svg" height="20">Limit
+              Request</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="LimitInquiry.html"><img src="assets/svg/limit_enq.svg" height="20">Limit
+              Inquire</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bnpl.html"><img src="assets/svg/BNPL_icon.svg" height="20">Buy Now Pay Later </a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cashLoan.html"><img src="assets/svg/cashloan_icon.svg" height="20">Cash Loan</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="td-request.html"><img src="assets/svg/td_request.svg" height="20">TD Request</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="saving_account.html"><img src="assets/svg/saving_account.svg" height="20">Saving
+              Account</a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="transfer.html"><img src="assets/svg/transfer_icon_app.svg" height="20">Transfer
+            </a>
+            <hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Logout</a>
+            <hr>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <!-- ofcanvas -->
+  <nav class="navbar navbar-dark bg-dark navbar-inverse">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Digital Bank</a>
+      <div class="d-flex"><i class="fal fa-bell fa-2x"></i></div>
+    </div>
+
+  </nav>
+  <!-- main container -->
+  <div id="main" class="container-fluid content">
+    <!-- First Row -->
+
+    <!-- First col  -->
+
+    <div class="row">
+      <div class="col-2">
+        <a href="#" onclick="goBack()"> <img class="padding-l5" src="assets/svg/back_btn.svg" height="30"></a>
+      </div>
+
+      <div class="col-8 center">
+        <h2>Buy Now Pay later</h2>
+      </div>
+      <div class="col-2 right">
+        <a href="index.html"> <img src="assets/svg/trans_icon.svg"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="card shadow">
+          <div class="row">
+            <div class="col-1">
+              <img src="assets/svg/checked_done.svg" height="30">
+            </div>
+            <div class="col-5"> Limit</div>
+            <div class="col-6 right">
+              <h4 class="orange_text">7000 EGP</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row spacer">
+      <div class="col-12">
+        <div class="card shadow center">
+          <span> <img src="assets/img/rayalogo.png" height="60" width="60"></span>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="row ">
+      <div class="col-12">
+
+        <div class="card shadow">
+          <div class="row">
+            <div class="col-2">
+              <img src="assets/img/product.png" width="60">
+            </div>
+            <div class="col-8">
+              <div class="row " style="padding-left: 5px;">
+                <div class="col-12">
+                  <h6>Oppo A74 </h6>
+                  <small>Dual SIM Mobile Phone
+                    6.43 Inch, 6 GB RAM, Prism Black
+                  </small>
+                </div>
+                <div class="col-6">
+                  <small>Merchant </small>
+                  <p class="orange_text"><strong>Raya</strong></p>
+                </div>
+                <div class="col-6"> <small>Price </small>
+                  <p class="orange_text"><strong>3000 EGP</strong></p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-2 right">
+             
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="companyName" data-error="wrong" data-success="right">Product</label>
+                <select id="rate_selector" class="form-select mb-3" aria-label=".form-select-lg example">
+
+                  <option selected value="1">0% Interest </option>
+                  <option value="2">With Interest</option>
+
+                </select>
+              </div>
+              <div class="mb-3 left">
+                <label for="exampleInputEmail1" class="form-label">Tenor</label>
+                <select id="month" class="form-select" aria-label="Default select example">
+                  <option selected>Please select </option>
+                  <option value="2">2 Months </option>
+                  <option value="3">3 Months</option>
+                  <option value="6">6 Months</option>
+                </select>
+
+              </div>
+              <p>
+              </p>
+              <label for="exampleInputEmail1" class="form-label">Quantity </label>
+              <div class="input-group">
+
+                <span class="input-group-btn">
+                  <button id="down_btn" type="button" class="btn btn-default btn-number" disabled="disabled"
+                    data-type="minus" data-field="quant[1]">
+                    <span class="fas fa-minus"></span>
+                  </button>
+                </span>
+                <input id="qty" type="text" name="quant[1]" class="form-control input-number" value="1" min="1"
+                  max="10">
+                <span class="input-group-btn">
+                  <button id="up_btn" type="button" class="btn btn-default btn-number" data-type="plus"
+                    data-field="quant[1]">
+                    <span class="fas fa-plus"></span>
+                  </button>
+                </span>
+              </div>
+              <p></p>
+              <div class="result-bnpl">
+                <div class="row ">
+                  <div class="col-6">
+                    <h6>Total :<strong class="orange_text"><span id="total">0</span><span>EGP</span></strong></h6>
+                  </div>
+                  <div class="col-6 right">
+                    <h6>Rate :<strong id="rate" class="orange_text">0</strong><strong><span>%</span></strong></h6>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 ">
+              <div class="row">
+
+                <div id="alert" class="col-12">
+                  <div id="myDIV" style="display: none;">
+                    <table class="table table-striped table-hover center">
+                      <thead>
+                        <tr>
+
+                          <th scope="col">Inst.Amt.</th>
+                          <th scope="col">Fees </th>
+                          <th scope="col">Total Inst.Amt. </th>
+                          <th scope="col">Due Date </th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr id="tr1">
+
+                          <td><span id="install1">1000</span> EGP</td>
+                         <td>0</td>
+                         <td id="ti-1">1050</td>
+                          <td>01/Feb/2022</td>
+                          
+
+
+                        </tr>
+                        <tr id="tr2">
+
+                          <td><span id="install2">1000</span> EGP</td>
+
+                         <td>0</td>
+                         <td id="ti-2">1050</td>
+                          <td>01/Mar/2022</td>
+                          
+
+                        </tr>
+                        <tr id="tr3">
+
+                          <td><span id="install3">1000</span> EGP</td>
+
+                          <td>
+                            0
+                          </td>
+                          <td id="ti-3">1050</td>
+                          <td>01/Apr/2022</td>
+                          
+                        </tr>
+                        <tr id="tr4" style="display: none;">
+
+                          <td><span id="install4">1000</span> EGP</td>
+
+                          <td>
+                           0
+                          </td>
+                          <td id="ti-4">1050</td>
+                          <td>01/May/2022</td>
+                          
+                        </tr>
+                        <tr id="tr5" style="display: none;">
+
+                          <td><span id="install5">1000</span> EGP</td>
+
+                          <td>
+                            0
+                          </td>
+                          <td id="ti-5">1050</td>
+                          <td>01/Jun/2022</td>
+                          
+                        </tr>
+                        <tr id="tr6" style="display: none;">
+
+                          <td><span id="install6">1000</span> EGP</td>
+
+                          <td>
+                           0
+                          </td>
+                          <td id="ti-6">1050</td>
+                          <td>01/Aug/2022</td>
+                          
+                        </tr>
+
+                      </tbody>
+                    </table>
+                    <h4 style="color:#000000; padding-top:10px">Fees</h4>
+                    <table class="table table-striped table-hover ">
+                      <thead>
+                        <tr>
+
+                          <th>BNPL Fees</th>
+                          <td class="center">0</td>
+
+                        </tr>
+                     
+                      
+
+                        <tr>
+
+                          <th>Admin Fees</th>
+                          <td class="center">0</td>
+
+
+                        </tr>
+                      </thead>
+                        <tbody></tbody>
+                        <tr>
+
+                          <th>Total Fees</th>
+                          <td class="center">0</td>
+
+
+                        </tr>
+
+
+
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary" style="margin-top: 5px;" onClick="calcprice()">Calculate </button>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-accent" style="margin-top: 5px;" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">Buy now</button></div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+  <!--Main-->
+
+
+
+
+
+
+
+
+  </div>
+
+  <!-- Scripts -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/jq-ui.js"></script>
+  <script type="text/javascript" src="assets/js/touch.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js"
+    integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/fonts/icons/pro/js/all.js"></script>
+  <script src="assets/js/steper.js"></script>
+  <script>
+    function calcprice() {
+      var qty = document.getElementById("qty").value;
+      var months = document.getElementById("month").value;
+      var total = qty * 3000;
+      var interestValue = document.getElementById("rate_selector").value;
+      var x;
+
+      function intresto() {
+        if (interestValue == 1) {
+          x = total
+          // document.getElementById("rate").innerHTML = "0";
+
+        }
+        if (interestValue == 2) {
+          x = (total * 0.20 / 12) * months + total;
+          // document.getElementById("rate").innerHTML = "15";
+        }
+
+        return x;
+      };
+
+      function changer() {
+        if (interestValue == 1) {
+
+          document.getElementById("rate").innerHTML = "0";
+
+        }
+        if (interestValue == 2) {
+
+          document.getElementById("rate").innerHTML = "20";
+        };
+      };
+
+      var FinalInterest = intresto();
+
+
+
+      var interest_month = (total * FinalInterest) / months;
+      var withInterest = FinalInterest;
+      var instalment = Math.floor(withInterest / months);
+
+      document.getElementById("total").innerHTML = withInterest;
+      document.getElementById("install1").innerHTML = instalment;
+      document.getElementById("install2").innerHTML = instalment;
+      document.getElementById("install3").innerHTML = instalment;
+      document.getElementById("install4").innerHTML = instalment;
+      document.getElementById("install5").innerHTML = instalment;
+      document.getElementById("install6").innerHTML = instalment;
+      document.getElementById("ti-1").innerHTML = instalment;
+      document.getElementById("ti-2").innerHTML = instalment;
+      document.getElementById("ti-3").innerHTML = instalment;
+      document.getElementById("ti-4").innerHTML = instalment;
+      document.getElementById("ti-5").innerHTML = instalment;
+      document.getElementById("ti-6").innerHTML = instalment;
+      
+      document.getElementById("myDIV").setAttribute('style', 'display:block;');
+
+      function table() {
+        intresto();
+        changer();
+        if (months == 2) {
+          document.getElementById("tr3").setAttribute('style', 'display:none;');
+
+        }
+        if (months == 6) {
+          document.getElementById("tr4").setAttribute('style', 'block');
+          document.getElementById("tr5").setAttribute('style', 'block');
+          document.getElementById("tr6").setAttribute('style', 'block');
+        }
+        if (months == 3) {
+          document.getElementById("tr1").setAttribute('style', 'block');
+          document.getElementById("tr2").setAttribute('style', 'block');
+          document.getElementById("tr3").setAttribute('style', 'block');
+          document.getElementById("tr4").setAttribute('style', 'display:none;');
+          document.getElementById("tr5").setAttribute('style', 'display:none;');
+          document.getElementById("tr6").setAttribute('style', 'display:none;');
+        } else {
+
+        };
+      };
+      table()
+      if (total > 7000) {
+        document.getElementById("alert").innerHTML =
+          ' <div id="alart-d" class="alert alert-danger" role="alert"> Error: exceeded your Available Limit!</div>'
+        document.getElementById("myDIV").setAttribute('style', 'display:none;');
+
+
+
+      } else {
+        document.getElementById("alart-d").setAttribute('style', 'display:none;');
+        document.getElementById("myDIV").setAttribute('style', 'display:block;');
+
+      };
+
+    }
+  </script>
+  <script>
+
+  </script>
+  <script>
+    $("#down").on('click touchstart', function () {
+      $("#cashloan").css("z-index", 0);
+      $("nav").removeClass("navbar-dark-orange");
+      // $("#bn-details").removeClass("disable");
+      // $("#cash-details").addClass("disable");
+
+
+
+
+    });
+
+    $("#up").on('click touchstart', function () {
+      $("#cashloan").css("z-index", 300);
+      $("nav").addClass("navbar-dark-orange");
+      //  $("#bn-details").addClass("disable");
+      //  $("#cash-details").removeClass("disable");
+
+
+
+    });
+  </script>
+  <script>
+    function run(run) {
+      document.getElementById('output').textContent = run.value;
+    }
+  </script>
+  <SCRIPT>
+    const actualBtn = document.getElementById('actual-btn');
+
+    const fileChosen = document.getElementById('file-chosen');
+
+    actualBtn.addEventListener('change', function () {
+      fileChosen.textContent = this.files[0].name
+    })
+    const actualBtn2 = document.getElementById('actual-btn2');
+
+    const fileChosen2 = document.getElementById('file-chosen2');
+
+    actualBtn2.addEventListener('change', function () {
+      fileChosen2.textContent = this.files[0].name
+    })
+  </SCRIPT>
+  <script>
+    $('.btn-number').click(function (e) {
+      e.preventDefault();
+
+      fieldName = $(this).attr('data-field');
+      type = $(this).attr('data-type');
+      var input = $("input[name='" + fieldName + "']");
+      var currentVal = parseInt(input.val());
+      if (!isNaN(currentVal)) {
+        if (type == 'minus') {
+
+          if (currentVal > input.attr('min')) {
+            input.val(currentVal - 1).change();
+          }
+          if (parseInt(input.val()) == input.attr('min')) {
+            $(this).attr('disabled', true);
+          }
+
+        } else if (type == 'plus') {
+
+          if (currentVal < input.attr('max')) {
+            input.val(currentVal + 1).change();
+          }
+          if (parseInt(input.val()) == input.attr('max')) {
+            $(this).attr('disabled', true);
+          }
+
+        }
+      } else {
+        input.val(0);
+      }
+    });
+    $('.input-number').focusin(function () {
+      $(this).data('oldValue', $(this).val());
+    });
+    $('.input-number').change(function () {
+
+      minValue = parseInt($(this).attr('min'));
+      maxValue = parseInt($(this).attr('max'));
+      valueCurrent = parseInt($(this).val());
+
+      name = $(this).attr('name');
+      if (valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+      } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+      }
+      if (valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+      } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+      }
+
+
+    });
+    $(".input-number").keydown(function (e) {
+      // Allow: backspace, delete, tab, escape, enter and .
+      if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+        // Allow: Ctrl+A
+        (e.keyCode == 65 && e.ctrlKey === true) ||
+        // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+        // let it happen, don't do anything
+        return;
+      }
+      // Ensure that it is a number and stop the keypress
+      if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+      }
+    });
+  </script>
+  <script></script>
+  <script>
+    $(function () {
+      $("#chkclub").click(function () {
+        if ($(this).is(":checked")) {
+          $("#dvclub").show();
+        } else {
+          $("#dvclub").hide();
+        }
+      });
+    });
+    $(function () {
+      $("#chkcar").click(function () {
+        if ($(this).is(":checked")) {
+          $("#dvcar").show();
+        } else {
+          $("#dvcar").hide();
+        }
+      });
+    });
+  </script>
+  <script>
+    function showURL() {
+      var d1 = $("#identifier").find(":selected").attr("class");
+      var url = ("/store/vehicle-selected/" + d1);
+      window.location = url;
+      return true;
+    }
+
+    $(document).ready(function () {
+      var $make = $('#make'),
+        $model = $('#model'),
+        $options = $model.find('option');
+
+      $make.on('change', function () {
+        $model.html($options.filter('[value="' + this.value + '"]'));
+        $model.trigger('change');
+      }).trigger('change');
+
+      var $model = $('#model'),
+        $year = $('#year'),
+        $yearOptions = $year.find('option');
+
+      $model.on('change', function () {
+        $year.html($yearOptions.filter('[value="' + this.value + '"]'));
+        $year.trigger('change');
+      }).trigger('change');
+
+      var $year = $('#year'),
+        $identifier = $('#identifier'),
+        $identifierOptions = $identifier.find('option');
+
+      $year.on('change', function () {
+        var filteredIdetifiers = $identifierOptions.filter('[value="' + this.value + '"]');
+        debugger
+        if (!($("#make").val() == 3 && $("#model option:selected").text() == 'Falcon')) {
+          filteredIdetifiers = filteredIdetifiers.filter(function (i, e) {
+            return e.value !== '3'
+          });
+        }
+        $identifier.html(filteredIdetifiers);
+        $identifier.trigger('change');
+      }).trigger('change');
+
+    });
+  </script>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+
+</html>

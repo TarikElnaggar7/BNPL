@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <g id="up_arrow_xs" transform="translate(790 -29) rotate(90)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="6" cy="6" r="6" transform="translate(29 778)" fill="#ebeded" opacity="0.643"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="4.8" cy="4.8" r="4.8" transform="translate(30.2 779.2)" fill="#fff"/>
+    <g id="wSaooQ.tif" transform="translate(38.174 786.195) rotate(180)">
+      <g id="Group_18" data-name="Group 18" transform="translate(0)">
+        <path id="Path_53" data-name="Path 53" d="M3.559,4.842c-.185-.046-.271-.129-.287-.279a.316.316,0,0,1,.108-.269q.749-.747,1.5-1.495l.056-.059a.15.15,0,0,0-.091-.012H.385a.65.65,0,0,1-.139-.011.3.3,0,0,1,0-.6.637.637,0,0,1,.139-.011H4.927c0-.037-.031-.051-.049-.069L3.372.535a.306.306,0,0,1,.4-.458c.025.021.047.045.07.068q1,1,2.007,2A.5.5,0,0,1,6,2.377v.084a.5.5,0,0,1-.144.227q-1.007,1-2.011,2.01a.464.464,0,0,1-.242.144Z" fill="#22d3c4"/>
+      </g>
+    </g>
+  </g>
+</svg>
